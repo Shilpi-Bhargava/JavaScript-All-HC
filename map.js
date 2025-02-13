@@ -11,10 +11,18 @@ console.log(map)
   'Sh' => 'Shilpi'
 }*/
 
-for(const [key, value] of map){
+for(const [key, value] of map){//hold alagh alag value
     console.log(key, ':-', value)
 }/* output is==In :- India
 USA :- USA
 Fr :- France
 Sh :- Shilpi
 */
+
+const = myObject = {
+  'game1': 'NFS',
+  'game2': 'SpiderMan'
+}
+
+// for(const {ket, value] of myObjects){
+//   console.log(key, value)    noy allowed object iteration via map
