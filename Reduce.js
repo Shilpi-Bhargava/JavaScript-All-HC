@@ -5,3 +5,8 @@ const myTotal = myNum.reduce( function (acc, curval) {
   return acc + curval
   }, 0)
 console.log(myTotal)
+
+
+//With arrow function
+const myTotal1 =  myNum.reduce( (acc, curr) => (acc+curr), 2)
+console.log(myTotal1)
