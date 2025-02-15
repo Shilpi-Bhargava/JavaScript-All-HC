@@ -17,3 +17,8 @@ const coding =[
 coding.forEach( (items) =>{
     console.log(items.languageName)
 })
+
+const values = coding.forEach( (items) => {
+    console.log(items)
+})
+console.log(values)
