@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style="background-color: aqua;">
+        <h2>Amazing images </h2>
+    <div>
+        <ul id="images">
+            <li>
+                
+                <img width="200px" id ="childs" src="https://media.istockphoto.com/id/533835295/vector/children-design.jpg?s=1024x1024&w=is&k=20&c=zo2LiihnQjtDAikXDcNB2zKl9h4bv5SBxXxCM-yD6Fw=" 
+                alt="photoshop">
+            </li>
+            <li>
+                
+                <img width="200px" id ="adultgirl" src="https://media.istockphoto.com/id/1483476094/photo/carefree-women-spinning-during-spring-day-in-nature.jpg?s=1024x1024&w=is&k=20&c=KVr9MwfoxOT0isqLMZEKG5cYZOlVhI_rYQWSfYjh1dY=" alt="photoshop">
+            </li>
+            <li>
+                
+                <img width="200px" id ="hand-photo" src="https://images.unsplash.com/photo-1488372759477-a7f4aa078cb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photoshop">
+            </li>
+            <li>
+                
+                <img width="200px" id ="adults" src="https://media.istockphoto.com/id/2151129875/photo/casual-teens-group-portrait.jpg?s=1024x1024&w=is&k=20&c=SYJBZEuNWEzMZztBhNjsXx3rydQM91Davd60UMUZriw=" alt="photoshop">
+            </li>
+            <li>
+                
+                <img width="200px" id ="girls" src="https://media.istockphoto.com/id/1662857795/photo/happy-family-relaxing-in-the-park.jpg?s=1024x1024&w=is&k=20&c=tXjADnPpV-N4cAY4ib1WPHMfVF9oekv5xKKYFBGl-Lw=" alt="photoshop">
+            </li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // document.getElementById('childs').onclick = function(){
+    //     alert("clicked")
+    // }
+    // document.getElementById('childs').addEventListener('click',function(){
+    //     alert("clicked")
+    // })
+    //attachEvent()
+    //jQuery- own Event Listner
+
+    ///Event object
+    // document.getElementById('childs').addEventListener('click', function(e){
+    //     alert("clicked")
+    //      console.log(e);
+    // }, false)
+    /*document.getElementById('images').addEventListener('click', function(e){
+        console.log('clickedinside the UL');
+    }, false)
+
+    document.getElementById('girls').addEventListener('click', function(e){
+        console.log("girls clicked  false wala");
+        e.stopPropagation()
+    }, false)
+
+    //capturing mode
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log('clickedinside the UL');
+    }, true)
+
+    document.getElementById('girls').addEventListener('click', function(e){
+        console.log("girls clicked  true wala");
+    }, true)
+    */
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target);
+    })
+
+</script>
+
+</html>
